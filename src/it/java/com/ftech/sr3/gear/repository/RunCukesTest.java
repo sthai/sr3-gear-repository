@@ -8,6 +8,6 @@ import org.junit.runner.RunWith;
  * Created by John_Archer on 27/12/2014.
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"}, features = {"src/it/resources/stories"})
+@CucumberOptions(plugin = {"pretty"}, features = {"src/it/resources/stories"}, glue={"com.ftech.sr3.gear.repository.steps", "cucumber.api.spring"})
 public class RunCukesTest {
 }
